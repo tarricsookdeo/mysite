@@ -1,0 +1,179 @@
+body {
+  background-color: #20286f;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar styles */
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 15%;
+  height: 64px;
+}
+
+.nav-link {
+  color: #c8bcbe;
+  text-decoration: none;
+  margin: 0 2em;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #9e9596;
+  transition-duration: 0.3s;
+}
+
+/* Landing styles */
+.landing-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 64px);
+}
+
+.landing-container > h2 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #c8bcbe;
+}
+
+.landing-container > h2 > span {
+  color: #a21a5e;
+}
+
+.landing-container > p {
+  font-size: 24px;
+  color: #c8bcbe;
+  padding-top: 1em;
+}
+
+#flatironschool-link {
+  text-decoration: none;
+  color: #a21a5e;
+}
+
+#my-work-link {
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #a21a5e;
+  border: 1px solid #a21a5e;
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+#my-work-link:hover {
+  background-color: #a21a5e;
+  color: #c8bcbe;
+  border-color: #c8bcbe;
+  transition-duration: 0.3s;
+}
+
+/* About styles */
+.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.about-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.about-text {
+  width: 40%;
+}
+
+.about-text > h1 {
+  color: #c8bcbe;
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+.about-text > p {
+  color: #c8bcbe;
+  font-size: 18px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1440px) {
+  .about-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-container {
+    width: 100%;
+  }
+
+  .about-text > p {
+    color: #c8bcbe;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-link {
+    margin: 0 0.8em;
+  }
+
+  .landing-container {
+    width: 95%;
+  }
+
+  #my-work-link {
+    width: 75%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .landing-container > h2 {
+    font-size: 36px;
+  }
+
+  .landing-container > p {
+    font-size: 20px;
+  }
+
+  #my-work-link {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 371px) {
+  .nav-link {
+    margin: 0 0.3em;
+    font-size: 16px;
+  }
+}
