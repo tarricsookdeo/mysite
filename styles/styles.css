@@ -2,13 +2,6 @@ body {
   background-color: #20286f;
 }
 
-.navbar-link {
-  text-decoration: none;
-  color: #c8bcbe;
-  font-size: 1.25em;
-  margin-left: 18px;
-}
-
 .landing-area {
   height: 100vh;
 }
@@ -46,8 +39,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.about-row {
-  border-bottom: 1px solid red;
 }
