@@ -1,148 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-    <title>Tarric Sookdeo | Portfolio Website</title>
-  </head>
-  <body>
-    <div class="container landing-area">
-      <div class="row">
-        <h1 class="landing-h1">
-          My name is <span>Tarric Sookdeo</span>. I build things with code.
-        </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>Tarric Sookdeo | Portfolio Website</title>
+</head>
+
+<body>
+  <div class="container landing-area">
+    <div class="row">
+      <h1 class="landing-h1">
+        My name is <span>Tarric Sookdeo</span>. I build things with code.
+      </h1>
+    </div>
+    <div class="row mt-1">
+      <h5 class="landing-h5">
+        I am a software engineer based in New York City. I love solving
+        problems, and building new expirences with code. I current work at
+        <a class="flatiron-school-link" href="https://flatironschool.com/" target="_blank">Flatiron School</a>
+        as a Software Engerring Technical Coach.
+      </h5>
+    </div>
+    <div class="row mt-3">
+      <a href="#" class="my-work-link text-center">My Work</a>
+    </div>
+  </div>
+
+  <div class="container biography-container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-xl-6 col-lg-7">
+        <img class="mx-auto d-block image" src="./images/headshot.jpg" />
       </div>
-      <div class="row mt-1">
-        <h5 class="landing-h5">
-          I am a software engineer based in New York City. I love solving
-          problems, and building new expirences with code. I current work at
-          <a
-            class="flatiron-school-link"
-            href="https://flatironschool.com/"
-            target="_blank"
-            >Flatiron School</a
-          >
-          as a Software Engerring Technical Coach.
-        </h5>
-      </div>
-      <div class="row mt-3">
-        <a href="#" class="my-work-link text-center">My Work</a>
+      <div id="biography-text" class="col-sm-12 col-md-12 col-xl-6 col-lg-5">
+        <h1 class="text-center title">About Me</h1>
+        <p class="text-center">
+          I believe code can do anything. It can help us cure diseases, enable
+          new experiences, enable us to explore the stars, and help create
+          opportunities for everyone. I wrote my first lines of code years ago
+          out of curiosity and fell in love with it. Even though software can
+          do anything, a specific application I love using if for is in the
+          field of finance. Think budgeting apps, fraud detection, and trading
+          bots. The challenges in financial technology (fintech) are complex
+          and I get very passionate about them. When not writing code, a
+          strong passion of mine is astronomy. I took up the hobby of
+          astrophotography recently in hopes of getting some cool pictures of
+          the night sky. You can check out my photos here.
+        </p>
       </div>
     </div>
 
-    <div class="container biography-container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-xl-6 col-lg-7">
-          <img class="mx-auto d-block image" src="./images/headshot.jpg" />
-        </div>
-        <div id="biography-text" class="col-sm-12 col-md-12 col-xl-6 col-lg-5">
-          <h2 class="text-center title">About Me</h2>
-          <p class="text-center">
-            I believe code can do anything. It can help us cure diseases, enable
-            new experiences, enable us to explore the stars, and help create
-            opportunities for everyone. I wrote my first lines of code years ago
-            out of curiosity and fell in love with it. Even though software can
-            do anything, a specific application I love using if for is in the
-            field of finance. Think budgeting apps, fraud detection, and trading
-            bots. The challenges in financial technology (fintech) are complex
-            and I get very passionate about them. When not writing code, a
-            strong passion of mine is astronomy. I took up the hobby of
-            astrophotography recently in hopes of getting some cool pictures of
-            the night sky. You can check out my photos here.
-          </p>
-        </div>
+    <div class="row mt-5 text-center">
+      <h2 class="mb-5 title">Programming Languages</h2>
+      <div class="col">
+        <i class="devicon-python-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Python (3+)</h5>
       </div>
+      <div class="col">
+        <i class="devicon-javascript-plain dev-icon">
+          <h5 class="dev-icon-text">JavaScript (ES6+)</h5>
+        </i>
+      </div>
+      <div class="col">
+        <i class="devicon-ruby-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Ruby</h5>
+      </div>
+      <div class="col">
+        <i class="devicon-html5-plain-wordmark dev-icon">
+          <h5 class="dev-icon-text">HTML</h5>
+        </i>
+      </div>
+      <div class="col">
+        <i class="devicon-css3-plain-wordmark dev-icon"></i>
+        <h5 class="dev-icon-text">CSS</h5>
+      </div>
+    </div>
+    <div class="row mt-5 text-center">
+      <h2 class="mb-5 title">Frameworks and Libraries</h2>
+      <div class="col">
+        <i class="devicon-django-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Django (2+)</h5>
+      </div>
+      <div class="col">
+        <i class="devicon-react-original dev-icon"></i>
+        <h5 class="dev-icon-text">React</h5></i>
+      </div>
+      <div class="col">
+        <i class="devicon-rails-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Ruby on Rails</h5>
+      </div>
+      <div class="col">
+        <i class="devicon-redux-original dev-icon"></i>
+        <h5 class="dev-icon-text">React Redux</h5></i>
+      </div>
+      <div class="col">
+        <i class="devicon-bootstrap-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Bootstrap (4+)</h5>
+      </div>
+    </div>
+    <div class="row mt-5 text-center">
+      <h2 class="mb-5 title">Other Technologies</h2>
+      <div class="col">
+        <i class="devicon-windows8-original dev-icon"></i>
+        <i class="devicon-linux-plain dev-icon"></i>
+        <h5 class="dev-icon-text">WSL</h5>
+      </div>
+      <div class="col">
+        <i class="devicon-debian-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Debian Linux</h5></i>
+      </div>
+      <div class="col">
+        <i class="devicon-amazonwebservices-original dev-icon"></i>
+        <h5 class="dev-icon-text">AWS</h5>
+      </div>
+      <div class="col">
+        <i class="devicon-azure-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Microsoft Azure</h5></i>
+      </div>
+      <div class="col">
+        <i class="devicon-digitalocean-plain dev-icon"></i>
+        <h5 class="dev-icon-text">Digital Ocean</h5>
+      </div>
+    </div>
+  </div>
 
-      <div class="row mt-5 text-center">
-        <h2 class="mb-5 title">Programming Languages</h2>
-        <div class="col">
-          <i class="devicon-python-plain dev-icon"></i>
-          <h5 class="dev-icon-text">Python (3+)</h5>
-        </div>
-        <div class="col">
-          <i class="devicon-javascript-plain dev-icon"
-            ><h5 class="dev-icon-text">JavaScript (ES6+)</h5></i
-          >
-        </div>
-        <div class="col">
-          <i class="devicon-ruby-plain dev-icon"></i>
-          <h5 class="dev-icon-text">Ruby</h5>
-        </div>
-        <div class="col">
-          <i class="devicon-html5-plain-wordmark dev-icon"
-            ><h5 class="dev-icon-text">HTML</h5></i
-          >
-        </div>
-        <div class="col">
-          <i class="devicon-css3-plain-wordmark dev-icon"></i>
-          <h5 class="dev-icon-text">CSS</h5>
-        </div>
-      </div>
-      <div class="row mt-5 text-center">
-        <h2 class="mb-5 title">Frameworks and Libraries</h2>
-        <div class="col">
-          <i class="devicon-django-plain dev-icon"></i>
-          <h5 class="dev-icon-text">Django (2+)</h5>
-        </div>
-        <div class="col">
-          <i class="devicon-react-original dev-icon"></i><h5 class="dev-icon-text">React</h5></i
-          >
-        </div>
-        <div class="col">
-          <i class="devicon-rails-plain dev-icon"></i>
-          <h5 class="dev-icon-text">Ruby on Rails</h5>
-        </div>
-        <div class="col">
-          <i class="devicon-redux-original dev-icon"></i><h5 class="dev-icon-text">React Redux</h5></i
-          >
-        </div>
-        <div class="col">
-          <i class="devicon-bootstrap-plain dev-icon"></i>
-          <h5 class="dev-icon-text">Bootstrap (4+)</h5>
-        </div>
-      </div>
-      <div class="row mt-5 text-center">
-        <h2 class="mb-5 title">Other Technologies</h2>
-        <div class="col">
-          <i class="devicon-windows8-original dev-icon"></i>
-          <i class="devicon-linux-plain dev-icon"></i>
-          <h5 class="dev-icon-text">WSL</h5>
-        </div>
-        <div class="col">
-          <i class="devicon-debian-plain dev-icon"></i><h5 class="dev-icon-text">Debian Linux</h5></i
-          >
-        </div>
-        <div class="col">
-          <i class="devicon-amazonwebservices-original dev-icon"></i>
-          <h5 class="dev-icon-text">AWS</h5>
-        </div>
-        <div class="col">
-          <i class="devicon-azure-plain dev-icon"></i><h5 class="dev-icon-text">Microsoft Azure</h5></i
-          >
-        </div>
-        <div class="col">
-          <i class="devicon-digitalocean-plain dev-icon"></i>
-          <h5 class="dev-icon-text">Digital Ocean</h5>
+  <div class="container project-card">
+    <h1 class="title mb-5">Projects</h1>
+    <div class="row">
+      <div class="card border-0">
+        <div class="row">
+          <div class="col-md-12 col-lg-6"><img class="mx-auto d-block project-image"
+              src="./images/dj-rest-auth-project.jpg" alt="">
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <h2 class="project-text mt-2">Django Auth API</h2>
+            <p class="project-text mt-1">Django is my favorite framework for building web apps and robust API's. Django
+              comes with a lot of features built it, and has an expansive selection of 3rd party apps and libraries to
+              get the job done. One of the most common tasks in any app is handling user authentication. The
+              dj-rest-auth package for Django helps create an authentication API. However, there's quite a lot of
+              configuration and tweaking needed to get this setup to play nice with a frontend framework such as React
+              or
+              Vue. This project is meant to be a demo for configuring Django, along with dj-rest-auth to be useable with
+              an SPA.
+            </p>
+            <h4 class="project-text">Built using</h4>
+            <ul class="project-text project-tech-list">
+              <li class="project-tech-li">Django</li>
+              <li class="project-tech-li">Django Rest Framework</li>
+              <li class="project-tech-li">Django Rest Auth</li>
+            </ul> <br>
+            <div class="mt-4">
+              <a class="project-link" href="https://github.com/tarricsookdeo/django-auth-api" target="_blank"><i
+                  class="devicon-github-original project-dev-icon"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Bootstrap js CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+
+  <div class="container project-card">
+    <div class="row">
+      <div class="card border-0">
+        <div class="row">
+          <div class="col-md-12 col-lg-6"><img class="mx-auto d-block project-image"
+              src="./images/react-auth-client.jpg" alt="">
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <h2 class="project-text mt-2">React Auth Client</h2>
+            <p class="project-text mt-1">This project goes hand in hand with Django Auth API. It is meant to serve as a
+              frontend SPA demo on handling user authentication.
+            </p>
+            <h4 class="project-text">Built using</h4>
+            <ul class="project-text project-tech-list">
+              <li class="project-tech-li">React</li>
+              <li class="project-tech-li">React Redux</li>
+              <li class="project-tech-li">React Router Dom</li>
+            </ul> <br>
+            <div class="mt-4">
+              <a class="project-link" href="https://github.com/tarricsookdeo/react-auth-client" target="_blank"><i
+                  class="devicon-github-original project-dev-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap js CDN -->
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
