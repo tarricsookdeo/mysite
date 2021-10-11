@@ -9,6 +9,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <script src="https://kit.fontawesome.com/de0e66508a.js" crossorigin="anonymous"></script>
   <title>Tarric Sookdeo | Portfolio Website</title>
 </head>
 
@@ -174,7 +175,9 @@
           <div class="col-md-12 col-lg-6">
             <h2 class="project-text mt-2">React Auth Client</h2>
             <p class="project-text mt-1">This project goes hand in hand with Django Auth API. It is meant to serve as a
-              frontend SPA demo on handling user authentication.
+              frontend SPA demo on handling user authentication. Note that redux thunk was used to make async requests
+              to the Django API. I also have many examples of making API requestes while manipulating local state of a
+              react component.
             </p>
             <h4 class="project-text">Built using</h4>
             <ul class="project-text project-tech-list">
@@ -190,6 +193,46 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="container project-card">
+    <div class="row">
+      <div class="card border-0">
+        <div class="row">
+          <div class="col-md-12 col-lg-6"><img class="mx-auto d-block project-image" src="./images/cbpro-bot.jpg"
+              alt="">
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <h2 class="project-text mt-2">Coinbase Pro Bot</h2>
+            <p class="project-text mt-1">A CLI based trading bot that uses the Coinbase Pro platform. User needs a
+              Coinbase Pro API key, and a custom strategy. Market data is pulled from Coinbase Pro, organized, and
+              analyzed. Buy and sell signals are generated based on the strategy used. Check out the projects README on
+              GitHub to see how customizing the bot works.
+            </p>
+            <h4 class="project-text">Built using</h4>
+            <ul class="project-text project-tech-list">
+              <li class="project-tech-li">Python</li>
+              <li class="project-tech-li">Coinbase Pro API</li>
+            </ul> <br>
+            <div class="mt-4">
+              <a class="project-link" href="https://github.com/tarricsookdeo/cbpro-bot" target="_blank"><i
+                  class="devicon-github-original project-dev-icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 title text-center">
+    <h1>Contact</h1>
+    <a class="contact-link" href="https://www.linkedin.com/in/tarric-sookdeo-a86b841a1/"><i
+        class="fab fa-linkedin fa-3x contact-icon"></i></a>
+    <a class="contact-link" href="https://github.com/tarricsookdeo"><i class="fab fa-github fa-3x contact-icon"></i></a>
+    <a class="contact-link" href="https://tarricsookdeo.medium.com/"><i
+        class="fab fa-medium fa-3x contact-icon"></i></a>
+    <a class="contact-link" href="mailto:tarricsookdeo@outlook.com"><i
+        class="fas fa-envelope-open-text fa-3x contact-icon"></i></a>
   </div>
   <!-- Bootstrap js CDN -->
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

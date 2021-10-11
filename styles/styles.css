@@ -113,6 +113,13 @@ body {
   color: #a21a5e;
 }
 
+/* Contact */
+.contact-icon {
+  color: #c8bcbe;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
 /* Media queries */
 @media (max-width: 576px) {
   .image {
