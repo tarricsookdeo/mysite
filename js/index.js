@@ -5,8 +5,8 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 var dots = [], // Array that contains the dots
-  FPS = 60, // Frames per second
-  x = 100, // Number of dots
+  FPS = 144, // Frames per second (inverse to speed)
+  x = 10, // Number of dots
   mouse = {
     x: 0,
     y: 0
@@ -34,7 +34,7 @@ function draw() {
   for (var i = 0, x = dots.length; i < x; i++) {
     var s = dots[i];
 
-    ctx.fillStyle = '#89CFF0';
+    ctx.fillStyle = 'white';
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
     ctx.fill();
