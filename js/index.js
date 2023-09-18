@@ -4,18 +4,18 @@ var canvas = document.getElementById('canvas'),
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var dots = [], // Array that contains the dots
-  FPS = 144, // Frames per second (inverse to speed)
-  x = 10, // Number of dots
+var stars = [], // Array that contains the stars
+  FPS = 144, // Frames per second
+  x = 250, // Number of stars
   mouse = {
     x: 0,
     y: 0
   }; // mouse location
 
-// Push dots to array
+// Push stars to array
 
 for (var i = 0; i < x; i++) {
-  dots.push({
+  stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     radius: Math.random() * 1 + 1,
@@ -31,10 +31,10 @@ function draw() {
 
   ctx.globalCompositeOperation = 'lighter';
 
-  for (var i = 0, x = dots.length; i < x; i++) {
-    var s = dots[i];
+  for (var i = 0, x = stars.length; i < x; i++) {
+    var s = stars[i];
 
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = '#fff';
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
     ctx.fill();
@@ -43,12 +43,12 @@ function draw() {
   }
 
   ctx.beginPath();
-  for (var i = 0, x = dots.length; i < x; i++) {
-    var starI = dots[i];
+  for (var i = 0, x = stars.length; i < x; i++) {
+    var starI = stars[i];
     ctx.moveTo(starI.x, starI.y);
     if (distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
-    for (var j = 0, x = dots.length; j < x; j++) {
-      var starII = dots[j];
+    for (var j = 0, x = stars.length; j < x; j++) {
+      var starII = stars[j];
       if (distance(starI, starII) < 150) {
         //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
         ctx.lineTo(starII.x, starII.y);
@@ -76,8 +76,8 @@ function distance(point1, point2) {
 // Update star locations
 
 function update() {
-  for (var i = 0, x = dots.length; i < x; i++) {
-    var s = dots[i];
+  for (var i = 0, x = stars.length; i < x; i++) {
+    var s = stars[i];
 
     s.x += s.vx / FPS;
     s.y += s.vy / FPS;
