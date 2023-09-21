@@ -11,14 +11,16 @@ This is done through 100vh values set in CSS.
 */
 const width = window.innerWidth;
 const length = window.innerHeight;
+const widthBoundary = width - 100;
+const lengthBoundary = length - 100;
 
 // Number of headshots
-const num = 1;
+const num = 5;
 
 /* An array of objects. Each object will contain the properties of the associated image.
-
 Properties of an image object:
 {
+  id: int,
   x: int,
   y: int,
   xd: int,
@@ -27,9 +29,30 @@ Properties of an image object:
 */
 const images = [];
 
-function generateImageObjects() {
-  
+function drawImages() {
+  for (let i = 0; i < num; i++) {
+    // Generate prop to be associated with an image
+    let prop = {
+      id: i + 1,
+      x: 0,
+      y: 0,
+      xd: 0,
+      yd: 0
+    };
+
+    // Create image object and populate
+    const img = document.createElement('img');
+    img.src = headshotSrc;
+    img.className = 'headshot';
+    img.id = `${i + 1}`;
+    img.style.position = 'absolute';
+    img.style.left = 0;
+    img.style.top = 0;
+    imageContainer.append(img);
+  }
 }
+
+drawImages();
 
 // for (let i = 0; i < num; i++) {
 //   const img = document.createElement('img');
