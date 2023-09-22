@@ -60,11 +60,6 @@ function drawImages() {
 }
 
 function animate() {
-  // Expirimenting with X value trends over time
-  const reduceX = images.reduce((acc, obj) => {
-    return acc + obj.x;
-  }, 0);
-  console.log(`Average X: ${reduceX / images.length}`);
   const headshots = document.getElementsByClassName('headshot');
   for (let i = 0; i < num; i++) {
     const newX = images[i].x + images[i].xd;
