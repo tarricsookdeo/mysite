@@ -17,7 +17,7 @@ const widthBoundary = width - 100;
 const lengthBoundary = length - 100;
 
 // Settime out interval
-const delay = 1000 / 144;
+const delay = 1000 / 60;
 
 // Number of headshots
 const num = 100;
@@ -41,8 +41,8 @@ function drawImages() {
       id: i,
       x: Math.floor(Math.random() * widthBoundary),
       y: Math.floor(Math.random() * lengthBoundary),
-      xd: Math.floor(Math.random() * 5),
-      yd: Math.floor(Math.random() * 5)
+      xd: Math.random() * (5 - -5) + -5,
+      yd: Math.random() * (5 - -5) + -5
     };
 
     images.push(prop);
