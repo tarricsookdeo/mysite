@@ -38,30 +38,30 @@ function drawImages() {
   for (let i = 0; i < num; i++) {
     // Generate prop to be associated with an image
     let prop = {
-      id: i + 1,
-      x: Math.floor(Math.random * 5),
-      y: Math.floor(Math.random * 5),
-      xd: `${Math.floor(Math.random() * widthBoundary)}px`,
-      yd: `${Math.floor(Math.random() * lengthBoundary)}px`
+      id: i,
+      x: Math.floor(Math.random() * widthBoundary),
+      y: Math.floor(Math.random() * lengthBoundary),
+      xd: Math.floor(Math.random() * 5),
+      yd: Math.floor(Math.random() * 5)
     };
+
+    images.push(prop);
 
     // Create image object and populate
     const img = document.createElement('img');
     img.src = headshotSrc;
     img.className = 'headshot';
-    img.id = `${i + 1}`;
+    img.id = `${i}`;
     img.style.position = 'absolute';
-    img.style.left = `${Math.floor(Math.random() * widthBoundary)}px`;
-    img.style.top = `${Math.floor(Math.random() * lengthBoundary)}px`;
+    img.style.left = `${images[i].x}px`;
+    img.style.top = `${images[i].y}px`;
     imageContainer.append(img);
   }
 }
 
 function animate() {
   const headshots = document.getElementsByClassName('headshot');
-  for (let i = 0; i < num; i++) {
-    
-  }
+  for (let i = 0; i < num; i++) {}
 }
 
 drawImages();
