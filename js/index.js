@@ -17,7 +17,7 @@ const widthBoundary = width - 100;
 const lengthBoundary = length - 100;
 
 // Settime out interval
-const delay = 1000 / 60;
+const delay = 1000 / 250;
 
 // Number of headshots
 const num = 100;
@@ -62,10 +62,23 @@ function drawImages() {
 function animate() {
   const headshots = document.getElementsByClassName('headshot');
   for (let i = 0; i < num; i++) {
-    headshots[i].style.left = `${images[i].x + images[i].xd}px`;
-    images[i].x = images[i].x + images[i].xd;
-    headshots[i].style.top = `${images[i].y + images[i].yd}px`;
-    images[i].y = images[i].y + images[i].yd;
+    // Update x
+    const newX = images[i].x + images[i].xd;
+    if (newX < widthBoundary && newX > 0) {
+      headshots[i].style.left = `${newX}px`;
+      images[i].x = newX;
+    } else {
+      images[i].xd = Math.random() * (5 - -5) + -5;
+    }
+
+    // Update y
+    const newY = images[i].y + images[i].yd;
+    if (newY < lengthBoundary && newY > 0) {
+      headshots[i].style.top = `${newY}px`;
+      images[i].y = newY;
+    } else {
+      images[i].yd = Math.random() * (5 - -5) + -5;
+    }
   }
 }
 
