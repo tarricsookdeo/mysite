@@ -11,8 +11,13 @@ This is done through 100vh values set in CSS.
 */
 const width = window.innerWidth;
 const length = window.innerHeight;
+
+// Max values image left and top can have due to img size
 const widthBoundary = width - 100;
 const lengthBoundary = length - 100;
+
+// Settime out interval
+const delay = 1000 / 60;
 
 // Number of headshots
 const num = 5;
@@ -34,10 +39,10 @@ function drawImages() {
     // Generate prop to be associated with an image
     let prop = {
       id: i + 1,
-      x: 0,
-      y: 0,
-      xd: 0,
-      yd: 0
+      x: Math.floor(Math.random * 5),
+      y: Math.floor(Math.random * 5),
+      xd: `${Math.floor(Math.random() * widthBoundary)}px`,
+      yd: `${Math.floor(Math.random() * lengthBoundary)}px`
     };
 
     // Create image object and populate
@@ -46,36 +51,20 @@ function drawImages() {
     img.className = 'headshot';
     img.id = `${i + 1}`;
     img.style.position = 'absolute';
-    img.style.left = 0;
-    img.style.top = 0;
+    img.style.left = `${Math.floor(Math.random() * widthBoundary)}px`;
+    img.style.top = `${Math.floor(Math.random() * lengthBoundary)}px`;
     imageContainer.append(img);
   }
 }
 
+function animate() {
+  const headshots = document.getElementsByClassName('headshot');
+  for (let i = 0; i < num; i++) {
+    
+  }
+}
+
 drawImages();
+animate();
 
-// for (let i = 0; i < num; i++) {
-//   const img = document.createElement('img');
-//   img.src = headshotSrc;
-//   img.className = 'headshot';
-//   img.style.position = 'absolute';
-//   img.style.left = `${Math.floor(Math.random() * innerWidth - 50)}px`;
-//   img.style.top = `${Math.floor(Math.random() * innerHeight - 50)}px`;
-//   imageContainer.append(img);
-// }
-
-// // Waldo image
-// const img = document.createElement('img');
-// img.src = waldoSrc;
-// img.className = 'headshot';
-// img.style.position = 'absolute';
-// img.style.left = `${Math.floor(Math.random() * innerWidth - 100)}px`;
-// img.style.top = `${Math.floor(Math.random() * innerHeight - 100)}px`;
-// imageContainer.append(img);
-
-// function animateImages() {
-//   const images = document.getElementsByClassName('headshot');
-//   for (let i = 0; i < images.length; i++) {}
-// }
-
-// animateImages();
+// const intervalID = setInterval(animate, 1000);
