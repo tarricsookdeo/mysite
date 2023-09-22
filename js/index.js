@@ -17,10 +17,10 @@ const widthBoundary = width - 100;
 const lengthBoundary = length - 100;
 
 // Settime out interval
-const delay = 1000 / 60;
+const delay = 1000 / 144;
 
 // Number of headshots
-const num = 5;
+const num = 100;
 
 /* An array of objects. Each object will contain the properties of the associated image.
 Properties of an image object:
@@ -61,10 +61,14 @@ function drawImages() {
 
 function animate() {
   const headshots = document.getElementsByClassName('headshot');
-  for (let i = 0; i < num; i++) {}
+  for (let i = 0; i < num; i++) {
+    headshots[i].style.left = `${images[i].x + images[i].xd}px`;
+    images[i].x = images[i].x + images[i].xd;
+    headshots[i].style.top = `${images[i].y + images[i].yd}px`;
+    images[i].y = images[i].y + images[i].yd;
+  }
 }
 
 drawImages();
-animate();
 
-// const intervalID = setInterval(animate, 1000);
+const intervalID = setInterval(animate, delay);
